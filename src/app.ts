@@ -13,7 +13,7 @@ app.use("/api/v1/students", StudentRoutes);
 
 app.get("/", (req: Request, res: Response) => {
   var a = 10;
-  res.send(a);
+  res.send({ a });
 });
 
 export default app;

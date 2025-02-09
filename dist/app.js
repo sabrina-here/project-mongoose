@@ -15,6 +15,6 @@ app.use((0, cors_1.default)());
 app.use("/api/v1/students", student_route_1.StudentRoutes);
 app.get("/", (req, res) => {
     var a = 10;
-    res.send(a);
+    res.send({ a });
 });
 exports.default = app;
